@@ -12,8 +12,14 @@ def get_indices_of_item_weights(weights, length, limit):
     """
     YOUR CODE HERE
     """
-
-    return None
+    for weight in weights:
+        index = weights.index(weight)
+        value = hash_table_retrieve(ht, limit - weight)
+        print(f' value: {value} index: {index}')
+        if value:
+            return value, index
+        else:
+            return None
 
 
 def print_answer(answer):
