@@ -32,8 +32,8 @@ Explain in detail the workings of a dynamic array:
  
 * Explain how proof of work functions. - Proof of work is an algorithm that confirms transactions and creates new blocks on the chain.
 * How does it operate. - Nodes (miners) compete to solve a mathmatical calculation in order to provide accurate proof and add the next block to the chain.
-* How does this protect the chain from attack. - 
-* What kind of attack is possible? - 51% attack could allows a someone to take control of the chain and give them the opportunity to change blocks
+* How does this protect the chain from attack. - Proof of work makes it difficult, costly, and time consuming to satisfy the requirement for a block to allow the creation of a new block.
+* What kind of attack is possible? - 51% attack could allows a someone to take control of the chain and give them the opportunity to change/replace previous blocks and the transactions they hold.
 
 ## Project Set Up
 
