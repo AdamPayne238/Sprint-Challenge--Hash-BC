@@ -22,9 +22,11 @@ This sprint challenge is divided up into three parts:  Hash tables coding, block
 
 ## Interview Questions
 
-Explain in detail the workings of a dynamic array:
-* What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
-* What is the worse case scenario if you try to extend the storage size of a dynamic array?
+Explain in detail the workings of a dynamic array: - A dynamic array is an array that automatically resizes when you add elements so you dont need to determine the size of the array before you add elements (like you do with an array).
+* What is the runtime complexity to access an array - O(1)
+ * add or remove from the front - O(1)
+ * and add or remove from the back? - O(1)
+* What is the worse case scenario if you try to extend the storage size of a dynamic array? O(n)
 
 * Explain how a blockchain is structured. - Blockchain starts with a genesis block. Once the proof of work matches the valid proof, a new block is hashed and added to the chain. In blockchain each transaction is stored in the current block and is not solidified until that block is mined and a new (last block) is added to the chain.
 * What are the blocks, what is the chain? - A block is a list of all transactions made during the time that block is the last block in the chain. A chain is a hash that links blocks together. The hash in the blockchain is created from the data that is in the previous block.
@@ -32,7 +34,7 @@ Explain in detail the workings of a dynamic array:
  
 * Explain how proof of work functions. - Proof of work is an algorithm that confirms transactions and creates new blocks on the chain.
 * How does it operate. - Nodes (miners) compete to solve a mathmatical calculation in order to provide accurate proof and add the next block to the chain.
-* How does this protect the chain from attack. - Proof of work makes it difficult, costly, and time consuming to satisfy the requirement for a block to allow the creation of a new block.
+* How does this protect the chain from attack. - Proof of work makes it difficult, costly, and time consuming to satisfy the requirement for a block to allow the creation of a new block. Also each previous hash is hashed witht he new block to create a new one. This makes it difficult to break the chain without it going un noticed.
 * What kind of attack is possible? - 51% attack could allows a someone to take control of the chain and give them the opportunity to change/replace previous blocks and the transactions they hold.
 
 ## Project Set Up
